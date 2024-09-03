@@ -415,3 +415,88 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "vendor/glfw-3.4/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xo48v"
+      binary: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xo48v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Hanu/CLionProjects/glChess/vendor/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xo48v'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_a151a
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_a151a.dir/src.c.obj -c C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xo48v/src.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_a151a.dir/src.c.obj -o cmTC_a151a.exe -Wl,--out-implib,libcmTC_a151a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "vendor/glfw-3.4/src/CMakeLists.txt:274 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6s3zx"
+      binary: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6s3zx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Hanu/CLionProjects/glChess/vendor/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6s3zx'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_82be8
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_82be8.dir/CheckIncludeFile.c.obj -c C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t6s3zx/CheckIncludeFile.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_82be8.dir/CheckIncludeFile.c.obj -o cmTC_82be8.exe -Wl,--out-implib,libcmTC_82be8.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "vendor/glfw-3.4/src/CMakeLists.txt:275 (check_include_file)"
+    checks:
+      - "Looking for xinput.h"
+    directories:
+      source: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-npwxzw"
+      binary: "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-npwxzw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Hanu/CLionProjects/glChess/vendor/glfw-3.4/CMake/modules"
+    buildResult:
+      variable: "XINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-npwxzw'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_2b284
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_2b284.dir/CheckIncludeFile.c.obj -c C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-npwxzw/CheckIncludeFile.c
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.2\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_2b284.dir/CheckIncludeFile.c.obj -o cmTC_2b284.exe -Wl,--out-implib,libcmTC_2b284.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
