@@ -63,6 +63,20 @@ build CMakeFiles/glChess.dir/main.cc.obj: CXX_COMPILER__glChess_unscanned_Debug 
   OBJECT_DIR = CMakeFiles\glChess.dir
   OBJECT_FILE_DIR = CMakeFiles\glChess.dir
 
+build CMakeFiles/glChess.dir/src/renderer/program.cc.obj: CXX_COMPILER__glChess_unscanned_Debug C$:/Users/Hanu/CLionProjects/glChess/src/renderer/program.cc || cmake_object_order_depends_target_glChess
+  DEP_FILE = CMakeFiles\glChess.dir\src\renderer\program.cc.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hanu/CLionProjects/glChess/vendor/glad/include -IC:/Users/Hanu/CLionProjects/glChess/vendor/glfw-3.4/include
+  OBJECT_DIR = CMakeFiles\glChess.dir
+  OBJECT_FILE_DIR = CMakeFiles\glChess.dir\src\renderer
+
+build CMakeFiles/glChess.dir/src/renderer/shader.cc.obj: CXX_COMPILER__glChess_unscanned_Debug C$:/Users/Hanu/CLionProjects/glChess/src/renderer/shader.cc || cmake_object_order_depends_target_glChess
+  DEP_FILE = CMakeFiles\glChess.dir\src\renderer\shader.cc.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hanu/CLionProjects/glChess/vendor/glad/include -IC:/Users/Hanu/CLionProjects/glChess/vendor/glfw-3.4/include
+  OBJECT_DIR = CMakeFiles\glChess.dir
+  OBJECT_FILE_DIR = CMakeFiles\glChess.dir\src\renderer
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target glChess
@@ -71,7 +85,7 @@ build CMakeFiles/glChess.dir/main.cc.obj: CXX_COMPILER__glChess_unscanned_Debug 
 #############################################
 # Link the executable glChess.exe
 
-build glChess.exe: CXX_EXECUTABLE_LINKER__glChess_Debug CMakeFiles/glChess.dir/vendor/glad/src/gl.c.obj CMakeFiles/glChess.dir/main.cc.obj | vendor/glfw-3.4/src/libglfw3.a || vendor/glfw-3.4/src/libglfw3.a
+build glChess.exe: CXX_EXECUTABLE_LINKER__glChess_Debug CMakeFiles/glChess.dir/vendor/glad/src/gl.c.obj CMakeFiles/glChess.dir/main.cc.obj CMakeFiles/glChess.dir/src/renderer/program.cc.obj CMakeFiles/glChess.dir/src/renderer/shader.cc.obj | vendor/glfw-3.4/src/libglfw3.a || vendor/glfw-3.4/src/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = vendor/glfw-3.4/src/libglfw3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\glChess.dir

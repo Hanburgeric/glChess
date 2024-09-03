@@ -10,6 +10,10 @@ set(GLAD vendor/glad/include/glad/gl.h vendor/glad/src/gl.c)
 # GLFW
 add_subdirectory(vendor/glfw-3.4)
 
-add_executable(${PROJECT_NAME} ${GLAD} main.cc)
+# SRC
+set(SRC src/renderer/program.cc src/renderer/program.h
+        src/renderer/shader.cc src/renderer/shader.h)
+
+add_executable(${PROJECT_NAME} ${GLAD} main.cc ${SRC})
 
 target_link_libraries(${PROJECT_NAME} glfw)

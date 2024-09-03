@@ -5,6 +5,10 @@
 #include "glad/gl.h"
 #include "GLFW/glfw3.h"
 
+// User headers
+#include "src/renderer/program.h"
+#include "src/renderer/shader.h"
+
 // OpenGL callback functions
 namespace gl {
 void APIENTRY DebugMessageCallback(GLenum source, GLenum type, GLuint id, GLenum severity,
@@ -60,7 +64,39 @@ int main() {
   glDebugMessageCallback(gl::DebugMessageCallback, nullptr);
 
   // Enable remaining OpenGL capabilities
-  glEnable(GL_DEPTH_TEST);
+  //glEnable(GL_DEPTH_TEST);
+
+  // Load shaders
+  glEngine::renderer::Shader default_vert(GL_VERTEX_SHADER, "../shaders/default.vert");
+  glEngine::renderer::Shader default_frag(GL_FRAGMENT_SHADER, "../shaders/default.frag");
+
+  // Link shaders
+  glEngine::renderer::Program default_prog({default_vert, default_frag});
+
+  // TEMPORARY
+  float vertices[] = {
+      // Positions         // Colors
+       0.5F, -0.5F, 0.0F,  1.0F, 0.0F, 0.0F,  // Bottom right
+      -0.5F, -0.5F, 0.0F,  0.0F, 1.0F, 0.0F,  // Bottom left
+       0.0F,  0.5F, 0.0F,  0.0F, 0.0F, 1.0F   // Top
+  };
+
+  unsigned int vao;
+  glGenVertexArrays(1, &vao);
+  glBindVertexArray(vao);
+
+  unsigned int vbo;
+  glGenBuffers(1, &vbo);
+  glBindBuffer(GL_ARRAY_BUFFER, vbo);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+  glEnableVertexAttribArray(0);
+
+  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+  glEnableVertexAttribArray(1);
+
+  glUseProgram(default_prog.GetProgram());
 
   // Main loop
   while (!glfwWindowShouldClose(window)) {
@@ -70,6 +106,12 @@ int main() {
     // Update
 
     // Render
+    glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    // TEMPORARY
+    glBindVertexArray(vao);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
 
     // Swap buffers
     glfwSwapBuffers(window);
