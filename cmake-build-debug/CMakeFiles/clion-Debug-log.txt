@@ -2,6 +2,9 @@
 -- Including Win32 support
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 -- Documentation generation requires Doxygen 1.9.8 or later
--- Configuring done (0.2s)
+-- GLM: Version 1.0.1
+-- GLM: Build with C++ features auto detection
+-- Using the multi-header code from C:/Users/Hanu/CLionProjects/glChess/vendor/json-3.11.3/include/
+-- Configuring done (0.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug
