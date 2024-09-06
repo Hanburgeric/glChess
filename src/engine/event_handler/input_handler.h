@@ -32,9 +32,9 @@ class InputHandler {
   // Mouse button
   void OnMouseButton(int button, int action);
 
-  bool WasMouseButtonPressed(int button);
-  bool IsMouseButtonHeld(int button);
-  bool WasMouseButtonReleased(int button);
+  bool WasMouseButtonPressed(int button) const;
+  bool IsMouseButtonHeld(int button) const;
+  bool WasMouseButtonReleased(int button) const;
 
   // Scroll
   void OnScroll(double xoffset, double yoffset);

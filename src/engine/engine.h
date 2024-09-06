@@ -8,16 +8,20 @@
 namespace glEngine {
 class Engine {
  public:
-  // Clear certain data in preparation for a new frame
-  void NewFrame();
-
-  // Handle user input
-  const event_handler::InputHandler& GetInputHandler() const;
-
+  // Handle events
   void OnCursorPos(double xpos, double ypos);
   void OnKey(int key, int action);
   void OnMouseButton(int button, int action);
   void OnScroll(double xoffset, double yoffset);
+
+  // New frame
+  void NewFrame();
+
+  // Update
+  void Update();
+
+  // Render
+  void Render();
 
  private:
   event_handler::InputHandler input_handler_;

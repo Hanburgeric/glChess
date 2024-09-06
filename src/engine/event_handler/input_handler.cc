@@ -118,25 +118,31 @@ void InputHandler::OnMouseButton(int button, int action) {
   }
 }
 
-bool InputHandler::WasMouseButtonPressed(int button) {
-  if (pressed_mouse_buttons_.find(button) == pressed_mouse_buttons_.end()) {
-    (void)pressed_mouse_buttons_.emplace(button, false);
+bool InputHandler::WasMouseButtonPressed(int button) const {
+  bool result = false;
+  const auto& iter = pressed_mouse_buttons_.find(button);
+  if (iter != pressed_mouse_buttons_.end()) {
+    result = iter->second;
   }
-  return pressed_mouse_buttons_[button];
+  return result;
 }
 
-bool InputHandler::IsMouseButtonHeld(int button) {
-  if (held_mouse_buttons_.find(button) == held_mouse_buttons_.end()) {
-    (void)held_mouse_buttons_.emplace(button, false);
+bool InputHandler::IsMouseButtonHeld(int button) const {
+  bool result = false;
+  const auto& iter = held_mouse_buttons_.find(button);
+  if (iter != held_mouse_buttons_.end()) {
+    result = iter->second;
   }
-  return held_mouse_buttons_[button];
+  return result;
 }
 
-bool InputHandler::WasMouseButtonReleased(int button) {
-  if (released_mouse_buttons_.find(button) == released_mouse_buttons_.end()) {
-    (void)released_mouse_buttons_.emplace(button, false);
+bool InputHandler::WasMouseButtonReleased(int button) const {
+  bool result = false;
+  const auto& iter = released_mouse_buttons_.find(button);
+  if (iter != released_mouse_buttons_.end()) {
+    result = iter->second;
   }
-  return released_mouse_buttons_[button];
+  return result;
 }
 
 void InputHandler::OnScroll(double xoffset, double yoffset) {

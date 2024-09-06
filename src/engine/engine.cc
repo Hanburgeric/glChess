@@ -1,18 +1,14 @@
 #include "engine.h"
 
+// System headers
+#include <optional>
+#include <vector>
+
 // User headers
 #include "event_handler/input_handler.h"
 #include "renderer/renderer.h"
 
 namespace glEngine {
-void Engine::NewFrame() {
-  input_handler_.NewFrame();
-}
-
-const event_handler::InputHandler& Engine::GetInputHandler() const {
-  return input_handler_;
-}
-
 void Engine::OnCursorPos(double xpos, double ypos) {
   input_handler_.OnCursorPos(xpos, ypos);
 }
@@ -27,5 +23,17 @@ void Engine::OnMouseButton(int button, int action) {
 
 void Engine::OnScroll(double xoffset, double yoffset) {
   input_handler_.OnScroll(xoffset, yoffset);
+}
+
+void Engine::NewFrame() {
+  input_handler_.NewFrame();
+}
+
+void Engine::Update() {
+  // Do nothing
+}
+
+void Engine::Render() {
+  // Do nothing
 }
 }

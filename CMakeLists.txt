@@ -17,9 +17,9 @@ add_subdirectory(vendor/glm-1.0.1)
 add_subdirectory(vendor/json-3.11.3)
 
 # SRC
-set(SRC src/engine/engine.cc src/engine/engine.h
+set(SRC src/engine/camera.cc src/engine/camera.h
+        src/engine/engine.cc src/engine/engine.h
         src/engine/event_handler/input_handler.cc src/engine/event_handler/input_handler.h
-        src/engine/renderer/camera.cc src/engine/renderer/camera.h
         src/engine/renderer/program.cc src/engine/renderer/program.h
         src/engine/renderer/shader.cc src/engine/renderer/shader.h
         src/engine/renderer/renderer.cc src/engine/renderer/renderer.h)

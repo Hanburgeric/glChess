@@ -13,7 +13,6 @@
 
 // User headers
 #include "src/engine/engine.h"
-#include "src/engine/event_handler/input_handler.h"
 #include "src/engine/renderer/program.h"
 #include "src/engine/renderer/shader.h"
 
