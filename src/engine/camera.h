@@ -2,12 +2,17 @@
 #define GLCHESS_SRC_ENGINE_CAMERA_H_
 
 // Vendor headers
+#include "glm/mat4x4.hpp"
 #include "glm/vec3.hpp"
 
 namespace glEngine {
 class Camera {
  public:
+  Camera();
+
   void Update();
+
+  glm::mat4 CalcViewMatrix();
 
  private:
   glm::vec3 position_;

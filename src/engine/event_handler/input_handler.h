@@ -19,8 +19,8 @@ class InputHandler {
   // Cursor position
   void OnCursorPos(double xpos, double ypos);
 
-  CursorPos GetXPos() const;
-  CursorPos GetYPos() const;
+  const CursorPos& GetXPos() const;
+  const CursorPos& GetYPos() const;
 
   // Key
   void OnKey(int key, int action);

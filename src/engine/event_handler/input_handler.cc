@@ -37,11 +37,11 @@ void InputHandler::OnCursorPos(double xpos, double ypos) {
   ypos_.delta_ = ypos_.current_ - ypos_.previous_;
 }
 
-CursorPos InputHandler::GetXPos() const {
+const CursorPos& InputHandler::GetXPos() const {
   return xpos_;
 }
 
-CursorPos InputHandler::GetYPos() const {
+const CursorPos& InputHandler::GetYPos() const {
   return ypos_;
 }
 

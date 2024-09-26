@@ -192,9 +192,7 @@ int main() {
     glUniformMatrix4fv(default_prog.GetUniformLocation("projection"), 1, false, glm::value_ptr(projection));
 
     // Set view matrix
-    glm::mat4 view = glm::lookAt(glm::vec3(0.0F, 0.0F, 10.0F),
-                                 glm::vec3(0.0F, 0.0F, 0.0F),
-                                 glm::vec3(0.0F, 1.0F, 0.0F));
+    glm::mat4 view = engine.camera_.CalcViewMatrix();
     glUniformMatrix4fv(default_prog.GetUniformLocation("view"), 1, false, glm::value_ptr(view));
 
     glBindVertexArray(vao);

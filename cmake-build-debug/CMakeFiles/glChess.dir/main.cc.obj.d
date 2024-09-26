@@ -354,6 +354,7 @@ CMakeFiles/glChess.dir/main.cc.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Users/hanwe/CLionProjects/glChess/vendor/glm-1.0.1/glm/gtc/type_ptr.inl \
  C:\Users\hanwe\CLionProjects\glChess\src/engine/engine.h \
+ C:\Users\hanwe\CLionProjects\glChess\src/engine/camera.h \
  C:\Users\hanwe\CLionProjects\glChess\src/engine/event_handler/input_handler.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \

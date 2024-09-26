@@ -1,10 +1,7 @@
 #include "engine.h"
 
-// System headers
-#include <optional>
-#include <vector>
-
 // User headers
+#include "camera.h"
 #include "event_handler/input_handler.h"
 #include "renderer/renderer.h"
 
@@ -30,7 +27,7 @@ void Engine::NewFrame() {
 }
 
 void Engine::Update() {
-  // Do nothing
+  camera_.Update();
 }
 
 void Engine::Render() {

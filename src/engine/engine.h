@@ -2,6 +2,7 @@
 #define GLCHESS_SRC_ENGINE_ENGINE_H_
 
 // User headers
+#include "camera.h"
 #include "event_handler/input_handler.h"
 #include "renderer/renderer.h"
 
@@ -22,6 +23,8 @@ class Engine {
 
   // Render
   void Render();
+
+  Camera camera_;
 
  private:
   event_handler::InputHandler input_handler_;
