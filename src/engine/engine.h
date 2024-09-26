@@ -24,11 +24,14 @@ class Engine {
   // Render
   void Render();
 
-  Camera camera_;
+  // Camera
+  const Camera& GetCamera() const;
 
  private:
   event_handler::InputHandler input_handler_;
   renderer::Renderer renderer_;
+
+  Camera camera_;
 };
 }
 

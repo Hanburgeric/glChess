@@ -12,7 +12,7 @@ class Camera {
 
   void Update();
 
-  glm::mat4 CalcViewMatrix();
+  glm::mat4 CalcViewMatrix() const;
 
  private:
   glm::vec3 position_;

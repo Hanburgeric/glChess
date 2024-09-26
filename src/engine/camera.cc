@@ -24,7 +24,7 @@ void Camera::Update() {
   up_ = glm::normalize(glm::cross(right_, front_));
 }
 
-glm::mat4 Camera::CalcViewMatrix() {
+glm::mat4 Camera::CalcViewMatrix() const {
   return glm::lookAt(position_, position_ + front_, up_);
 }
 }

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hanwe/CLionProjects/glChess/vendor/glm-1.0.1
+# Install script for directory: C:/Users/Hanu/CLionProjects/glChess/vendor/glm-1.0.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/hanwe/CLionProjects/glChess/cmake-build-debug/vendor/glm-1.0.1/glm/cmake_install.cmake")
+  include("C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/vendor/glm-1.0.1/glm/cmake_install.cmake")
 
 endif()
 

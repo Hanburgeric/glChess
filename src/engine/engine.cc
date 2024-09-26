@@ -27,10 +27,16 @@ void Engine::NewFrame() {
 }
 
 void Engine::Update() {
+  // Camera
+  // Do stuff
   camera_.Update();
 }
 
 void Engine::Render() {
   // Do nothing
+}
+
+const Camera& Engine::GetCamera() const {
+  return camera_;
 }
 }

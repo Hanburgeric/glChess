@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hanwe/CLionProjects/glChess
+# Install script for directory: C:/Users/Hanu/CLionProjects/glChess
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hanwe/CLionProjects/glChess/cmake-build-debug/vendor/glfw-3.4/cmake_install.cmake")
+  include("C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/vendor/glfw-3.4/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hanwe/CLionProjects/glChess/cmake-build-debug/vendor/glm-1.0.1/cmake_install.cmake")
+  include("C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/vendor/glm-1.0.1/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/hanwe/CLionProjects/glChess/cmake-build-debug/vendor/json-3.11.3/cmake_install.cmake")
+  include("C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/vendor/json-3.11.3/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/hanwe/CLionProjects/glChess/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Hanu/CLionProjects/glChess/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

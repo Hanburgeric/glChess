@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hanwe/CLionProjects/glChess/vendor/json-3.11.3
+# Install script for directory: C:/Users/Hanu/CLionProjects/glChess/vendor/json-3.11.3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

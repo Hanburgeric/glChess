@@ -49,7 +49,7 @@ int main() {
   glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
 
   // Initialize window
-  GLFWwindow* window = glfwCreateWindow(1280, 720, "glChess", nullptr, nullptr);
+  GLFWwindow* window = glfwCreateWindow(1600, 900, "glEngine", nullptr, nullptr);
 
   if (!window) {
     std::cerr << "glfwCreateWindow failed" << std::endl;
@@ -176,7 +176,7 @@ int main() {
     // Update
 
     // Render
-    glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
+    glClearColor(0.0F, 0.0F, 0.0F, 1.0F);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // Use program
@@ -192,7 +192,7 @@ int main() {
     glUniformMatrix4fv(default_prog.GetUniformLocation("projection"), 1, false, glm::value_ptr(projection));
 
     // Set view matrix
-    glm::mat4 view = engine.camera_.CalcViewMatrix();
+    glm::mat4 view = engine.GetCamera().CalcViewMatrix();
     glUniformMatrix4fv(default_prog.GetUniformLocation("view"), 1, false, glm::value_ptr(view));
 
     glBindVertexArray(vao);
