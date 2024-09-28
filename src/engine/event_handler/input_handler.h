@@ -14,7 +14,7 @@ struct CursorPos {
 
 class InputHandler {
  public:
-  void NewFrame();
+  void Update();
 
   // Cursor position
   void OnCursorPos(double xpos, double ypos);

@@ -170,10 +170,8 @@ int main() {
     // Handle events
     glfwPollEvents();
 
-    // New frame
-    engine.NewFrame();
-
     // Update
+    engine.Update();
 
     // Render
     glClearColor(0.0F, 0.0F, 0.0F, 1.0F);

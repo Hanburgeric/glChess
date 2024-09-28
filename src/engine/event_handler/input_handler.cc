@@ -8,7 +8,7 @@
 #include "GLFW/glfw3.h"
 
 namespace glEngine::event_handler {
-void InputHandler::NewFrame() {
+void InputHandler::Update() {
   // Cursor pos
   xpos_.previous_ = xpos_.current_;
   ypos_.previous_ = ypos_.current_;

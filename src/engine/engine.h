@@ -15,9 +15,6 @@ class Engine {
   void OnMouseButton(int button, int action);
   void OnScroll(double xoffset, double yoffset);
 
-  // New frame
-  void NewFrame();
-
   // Update
   void Update();
 
